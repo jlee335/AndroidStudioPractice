@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MADCAMP.Helloworld</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="say_hello_button">Say Hello Button</string>
+    <string name="bold_text">Bold Text</string>
+    <string name="say_hello_yourself">Say Hello Yourself...</string>
+</resources>
