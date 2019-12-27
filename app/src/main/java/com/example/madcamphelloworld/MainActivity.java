@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.madcamphelloworld.MESSAGE";
 
@@ -14,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //FloatingActionButton fab = findViewById(R.id.floatingActionButton);
+        //fab.setOnClickListener(new FABClickListener());
+        // FAB 의 클릭 listener 를 시작 시 설정
     }
 
     //By OnClick, this is tied to the button. Function called when button pressed
@@ -27,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         // activity 를 옮김과 동시에, 새 activity 에 변수를 넘기고 싶을 때!
         startActivity(intent); // intent 를 통해 새 activity 에 접속?
     }
+
+    public void gotoRecycleView(View view){
+        Intent intent = new Intent(this, ScrollingActivity.class);
+        startActivity(intent); // intent 를 통해 새 activity 에 접속?
+    }
+
+
+
     public void toggle_switch(View view){}
 
 
